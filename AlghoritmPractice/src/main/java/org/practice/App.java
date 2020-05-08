@@ -27,7 +27,7 @@ public class App {
         values.put('C', 100);
         values.put('D', 500);
         values.put('M', 1000);
-        return (int) values.get(r.charValue());
+        return  values.get(r);
     }
 
     //Activity 2
