@@ -84,5 +84,12 @@ public class App {
         return word;
     }
 
+    //Activity 6
+    public static Boolean stringVerify(String word){
+       Pattern pattern =  Pattern.compile("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])[a-zA-Z][a-zA-Z0-9_]{8,30}$");
+        Matcher matcher = pattern.matcher(word);
+    return matcher.matches();
+    }
+
 }
 
